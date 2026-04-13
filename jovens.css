@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    background-color: #100f0f;
+
+}
+
+
+
+.texto {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Afacad', sans-serif;
+    color: white;
+    --h: 1.2em;
+    --c: #ffffff;
+    cursor: pointer;
+
+}
+
+.textosweep {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    transition: color 0.3s ease;
+}
+
+.textosweep:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 217, 0);
+    height: 7px;
+    border-radius: 30px;
+    width: 0;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(255, 217, 0, 0.7);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textosweep:hover {
+    color: rgb(255, 217, 0);
+}
+
+.textosweep:hover:after {
+    width: 100%;
+}
+
+
+
+.textpai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+
+}
+
+.text {
+    position: relative;
+    color: #ffffff;
+    font-size: 76px;
+    letter-spacing: 0.5px;
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    transition: color 0.3s ease;
+
+}
+
+.text:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 217, 0);
+    height: 8px;
+    border-radius: 30px;
+    width: 0;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(255, 217, 0, 0.7);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text:hover {
+    color: rgb(255, 217, 0);
+
+}
+
+.text:hover:after {
+    width: 100%;
+}
+
+
+h3 {
+    font-family: 'Afacad', sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+    margin: 0;
+    cursor: pointer;
+    padding: 0 .1em;
+
+}
+
+.carousel {
+    width: 100%;
+    min-height: 25vh;
+    display: flex;
+    overflow-x: auto;
+
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    min-width: 100%;
+    animation: spin 70s infinite linear;
+    padding-right: 1rem;
+
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+
+}
+
+.foto {
+    flex: 0 0 250px;
+    height: 160px;
+    border-radius: 15px;
+
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foto img:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.maincontent {
+    border-radius: 32px;
+    background-image: url('assets/sunsets.jpg');
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    box-shadow: 15px 30px 35px rgb(0, 0, 0);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+.maincontent:hover {
+    box-shadow: 25px 40px 50px rgb(0, 0, 0);
+    transform: translateY(-5px);
+
+}
+
+.perguntas {
+    color: #ffffff;
+    font-size: 52px;
+    line-height: 0.9;
+    margin-left: 5%;
+    margin-right: 5%;
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), text-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+
+}
+
+
+.perguntas:hover {
+    color: rgb(255, 217, 0);
+    text-shadow: 0 0 8px rgba(255, 217, 0, 0.6), 0 0 15px rgba(255, 217, 0, 0.2);
+
+}
+
+
+.respostas {
+    color: #ffffff;
+    font-size: 26px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-shadow: 0 0 10px rgba(255, 217, 0, 0.491);
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), text-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+
+}
+
+.respostas:hover {
+    color: rgb(255, 239, 150);
+    text-shadow: 0 0 8px rgba(240, 221, 112, 0.6), 0 0 15px rgba(240, 221, 110, 0.2);
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer strong {
+    color: #fedd00;
+    text-transform: uppercase;
+    scale: 0.8;
+    transition: all 0.4s ease, all 0.4s ease;
+    display: inline-block;
+    font-size: 1rem;
+
+}
+
+.footer strong:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(254, 221, 0, 0.5);
+    margin: 0 15px;
+    cursor: default;
+    font-size: 1.4rem;
+}
